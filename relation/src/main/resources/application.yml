@@ -1,0 +1,20 @@
+micronaut:
+  application:
+    name: relation
+  server:
+    port: 8088
+
+---
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:26257/db_realsi
+    driverClassName: org.postgresql.Driver
+    username: root
+    password: ''
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+
